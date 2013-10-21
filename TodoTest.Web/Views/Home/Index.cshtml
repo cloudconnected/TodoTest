@@ -1,0 +1,34 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Awesome Todos!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="PageWrapper">
+    <div id="TodoWrapper" ng-controller="TodoController" ng-init="init()">
+        <div class="text-center">
+            <h1>Awesome todos!</h1>
+            <form role="form" class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="Todo">Email address</label>
+                    <input type="text" class="form-control" id="Todo" placeholder="Enter new todo name" ng-model="newTodoName">
+                </div>
+                <button class="btn btn-success" ng-click="addTodo()"><i class="icon icon-plus"></i></button>
+            </form>
+        </div>
+        <div id="Todos" ng-show="hasAnyTodos()" ng-cloak>
+            <header>Things I need to get done:</header>
+            <table class="table table-condensed table-striped">
+                <tr ng-repeat="todo in todos | orderBy:'Name'">
+                    <td class="todo">
+                        <input type="checkbox" id="Completed-{{todo.Id}}" ng-model="todo.Completed" ng-click="completeTodo(todo)"/>
+                        <label for="Completed-{{todo.Id}}" class="name" ng-class="{completed: todo.Completed}">{{todo.Name}}</label>
+                    </td>
+                    <td class="text-right">
+                        <a ng-click="removeTodo(todo.Id)" class="btn btn-danger"><i class="icon-remove"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
