@@ -1,4 +1,5 @@
 ﻿@using SquishIt.Framework
+@using SquishIt.Framework.Minifiers.JavaScript
 <!DOCTYPE html>
 
 <html ng-app="Todo">
@@ -25,6 +26,7 @@
         .Add("~/Scripts/app/controllers/TodoController.js")
         .Add("~/Scripts/app/services/TodoService.js")
         .Add("~/Scripts/app/helpers/HttpRequestUrlHelper.js")
+        .WithMinifier<JsMinMinifier>()
         .Render("~/Scripts/todo_#.js")
     )
 </body>
