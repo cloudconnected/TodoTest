@@ -1,7 +1,7 @@
 Cloud Connecteds arbetsprov. 
 ================================
 Todo test är grunden för Cloud Connecteds arbetsprov. 
-Arbetsprovet går ut på förstår todo-applikationens implementation och implementera ny funktionalitet till applikationen genom att använda applikationens befintliga ramverk och följa den befintliga arkitekturen/implementationen. Ingen befintlig funktionalitet får tas bort och inga befintliga tester får tas bort eller fallera.
+Arbetsprovet går ut på att förstå todo-applikationens implementation och implementera ny funktionalitet till applikationen genom att använda applikationens befintliga ramverk och följa den befintliga arkitekturen/implementationen. Ingen befintlig funktionalitet får tas bort och inga befintliga tester får tas bort eller fallera.
 
 En demo av denna applikation finns på [todotest.apphb.com](http://todotest.apphb.com/).
 
