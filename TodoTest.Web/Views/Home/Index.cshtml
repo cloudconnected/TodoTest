@@ -7,12 +7,9 @@
 <div id="PageWrapper">
     <div id="TodoWrapper" ng-controller="TodoController" ng-init="init()">
         <div class="text-center">
-            <h1>Awesome todos!</h1>
+            <h2>Awesome todos!</h2>
             <form role="form" class="form-inline">
-                <div class="form-group">
-                    <label class="sr-only" for="Todo">Email address</label>
-                    <input type="text" class="form-control" id="Todo" placeholder="Enter new todo name" ng-model="newTodoName">
-                </div>
+                <input type="text" class="form-control" id="Todo" placeholder="Enter new todo name" ng-model="newTodoName">
                 <button class="btn btn-success" ng-click="addTodo()"><i class="icon icon-plus"></i></button>
             </form>
         </div>
@@ -21,11 +18,12 @@
             <table class="table table-condensed table-striped">
                 <tr ng-repeat="todo in todos | orderBy:'Name'">
                     <td class="todo">
-                        <input type="checkbox" id="Completed-{{todo.Id}}" ng-model="todo.Completed" ng-click="completeTodo(todo)"/>
-                        <label for="Completed-{{todo.Id}}" class="name" ng-class="{completed: todo.Completed}">{{todo.Name}}</label>
+                        <label for="Completed-{{todo.Id}}" class="name checkbox" ng-class="{completed: todo.Completed}">{{todo.Name}}
+                            <input type="checkbox" id="Completed-{{todo.Id}}" ng-model="todo.Completed" ng-click="completeTodo(todo)"/>
+                        </label>
                     </td>
-                    <td class="text-right">
-                        <a ng-click="removeTodo(todo.Id)" class="btn btn-danger"><i class="icon-remove"></i></a>
+                    <td>
+                        <a ng-click="removeTodo(todo.Id)" class="btn btn-danger pull-right"><i class="icon-remove"></i></a>
                     </td>
                 </tr>
             </table>

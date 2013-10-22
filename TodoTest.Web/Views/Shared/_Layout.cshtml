@@ -8,7 +8,8 @@
     <title>@ViewBag.Title</title>
     @Html.Raw(
         @Bundle.Css()
-        .Add("~/Content/bootstrap/bootstrap.css")
+        .Add("~/Content/bootstrap.css")
+        .Add("~/Content/bootstrap-responsive.css")
         .Add("~/Content/font-awesome.css")
         .Add("~/Content/app/todo.less")
         .Render("~/Content/todo_#.css")
