@@ -32,7 +32,6 @@ public void CanSearch()
     result.Should().ContainSingle(x => x.Name.Equals("buy a milkshake at mc donalds"));
 }
 ```
-
  3)	Användaren ska kunna söka på todos i gränssnittet genom att skriva i en textbox. Undertiden användaren skriver visas en dropdown där användaren kan välja namnet på matchande todos. Tycker användaren enter i sökboxen eller klickar på användaren på sökikonen bredvid sökfältet byts todi-listan ”Things I need to get done” mot sökresultatet. Användaren ska kunna checka av och radera todos i sökresultatet. Sökboxen ska bara visas om det finns några todos att söka på.
  4)	Om listan på todos överstiger 10 stycken ska en paginering visas och användaren ska kunna hoppa mellan de olika sidorna. Pagineringen ska hålla koll när nya tods radera/adderas och pagineringen ska uppdateras i samma takt. 
 
