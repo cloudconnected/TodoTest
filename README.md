@@ -7,9 +7,9 @@ En demo av denna applikation finns på [todotest.apphb.com](http://todotest.apph
 
 Del 1
 -------------------------
-Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med [Twitter Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/), [AngularJS](http://angularjs.org/) och [Angular-ui](http://angular-ui.github.io/).
+Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med [Twitter Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/), [AngularJS](http://angularjs.org/) och [Angular-ui](http://angular-ui.github.io/). __Alla tredjepartsramverk hämtas via Nuget__. 
 
-1.	Hämta hem källkoden från detta respository och kör applikationen. Alla tredjepartsramverk hämtas via Nuget. 
+1.	Hämta hem källkoden från detta respository och kör applikationen. 
 2.	Implementera stöd för att söka efter tillagda todos. 
    -	Sökningen ska göras mot [ConcurrentBag<IPersistable> Database i Store](https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/Store.cs#L10]. Interfacet [IStore][https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/IStore.cs) får inte förändras.
    -	En sökning på "Mil" ska ge träff på "buy milk", "drink MILK" and "buy a milkshake at mc donalds". Dvs ord ska i todo-ns namn ska vara sökbara och inte kräva att användaren skriver in hela sökordet.
