@@ -7,7 +7,7 @@ En demo av denna applikation finns på [todotest.apphb.com](http://todotest.apph
 
 Del 1
 -------------------------
-Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med [Twitter Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/), [AngularJS](http://angularjs.org/) och [Angular-ui](http://angular-ui.github.io/). __Alla tredjepartsramverk hämtas via Nuget__. 
+Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med [Twitter Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/), [AngularJS 1.0.8](http://angularjs.org/) och [Angular-ui 0.6.0](http://angular-ui.github.io/). __Alla tredjepartsramverk hämtas via Nuget__. 
 
 1.	Hämta hem källkoden från detta respository och kör applikationen. 
 2.	Implementera stöd för att söka efter tillagda todos. 
