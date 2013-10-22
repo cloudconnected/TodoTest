@@ -37,12 +37,12 @@ Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i mi
    ```
 
 3.	Användaren ska kunna söka på todos i gränssnittet genom att skriva i en textbox. 
-   - Undertiden användaren skriver visas en dropdown där användaren kan välja namnet på matchande todos. 
-   - Tycker användaren enter i sökboxen eller klickar på användaren på sökikonen bredvid sökfältet byts todi-listan "Things I need to get done" mot sökresultatet. 
+   - Under tiden användaren skriver visas en dropdown där användaren kan välja namnet på matchande todos. 
+   - Trycker användaren enter i sökboxen eller klickar på sökikonen bredvid sökfältet byts todo-listan "Things I need to get done" mot sökresultatet. 
    - Användaren ska kunna checka av och radera todos i sökresultatet. 
    - Sökboxen ska bara visas om det finns några todos att söka på.
 4.	Om listan på todos överstiger 10 stycken ska en paginering visas och användaren ska kunna hoppa mellan de olika sidorna. 
-   - Pagineringen ska hålla koll när nya tods radera/adderas och pagineringen ska uppdateras i samma takt. 
+   - Pagineringen ska hålla koll på när nya tods radera/adderas och pagineringen ska uppdateras i samma takt. 
 
 Del 2
 -------------------------
@@ -54,5 +54,5 @@ Kraven för loggningen är följande:
 
 Del 3
 -------------------------
-Skapa ett gratiskonto hos [AppHarbor](https://appharbor.com/) (CANOE) och deploy’a upp applikationen. Skicka ett mail till rekrytering@cloudconnected.se men den publika länken till projektet på AppHarbor samt en zip med källkoden för projektet. 
+Skapa ett gratiskonto hos [AppHarbor](https://appharbor.com/) (CANOE) och deploy’a upp applikationen. Skicka ett mail till rekrytering@cloudconnected.se med den publika länken till projektet på AppHarbor samt en zip med källkoden för projektet. 
  
