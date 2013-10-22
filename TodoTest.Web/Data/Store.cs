@@ -18,7 +18,7 @@ namespace TodoTest.Web.Data
             }
         }
 
-        public IPersistable Add<T>(T @object) where T : IPersistable
+        public virtual IPersistable Add<T>(T @object) where T : IPersistable
         {
             if (@object.Id == Guid.Empty)
             {
@@ -30,25 +30,25 @@ namespace TodoTest.Web.Data
             return @object;
         }
 
-        public IEnumerable<T> Get<T>(int skip, int take) where T : IPersistable
+        public virtual IEnumerable<T> Get<T>(int skip, int take) where T : IPersistable
         {
             var skipIndex = skip == 0 ? 0 : skip - 1;
             return Database.Skip(skipIndex).Take(take).Cast<T>();
         }
 
-        public T Get<T>(IPersistable @object) where T : IPersistable
+        public virtual T Get<T>(IPersistable @object) where T : IPersistable
         {
             return (T)Database.SingleOrDefault(x => x.Id.Equals(@object.Id));
         }
 
-        public T Update<T>(T @object) where T : IPersistable
+        public virtual T Update<T>(T @object) where T : IPersistable
         {
             var _ = Delete<T>(@object.Id);
             Add(@object);
             return @object;
         }
 
-        public T Delete<T>(Guid guid) where T : IPersistable
+        public virtual T Delete<T>(Guid guid) where T : IPersistable
         {
             var deletedItem = default (T);
             var tmp = new List<T>();
