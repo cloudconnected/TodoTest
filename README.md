@@ -3,6 +3,8 @@ Cloud Connecteds arbetsprov.
 Todo test är grunden för Cloud Connecteds arbetsprov. 
 Arbetsprovet går ut på förstår todo-applikationens implementation och implementera ny funktionalitet till applikationen genom att använda applikationens befintliga ramverk och följa den befintliga arkitekturen/implementationen. Ingen befintlig funktionalitet får tas bort och inga befintliga tester får tas bort eller fallera.
 
+En demo av denna applikation finns på [todotest.apphb.com](http://todotest.apphb.com/).
+
 Del 1
 -------------------------
 Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med [Twitter Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/), [AngularJS](http://angularjs.org/) och [Angular-ui](http://angular-ui.github.io/).
