@@ -6,6 +6,7 @@ Arbetsprovet går ut på att lägga till ny funktionalitet till webbapplikatione
 Del 1
 -------------------------
 Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med Twitter Bootstrap 2.3.2, AngularJS och angular-ui.
+
 1.	Hämta hem källkoden från detta respository och kör applikationen. Alla tredjepartsramverk hämtas via Nuget. 
 2.	Implementera stöd för att söka efter tillagda todos. 
    -	Sökningen ska göras mot ConcurrentBag<IPersistable> Database i Store. Interfacet IStore får inte förändras.
@@ -39,6 +40,7 @@ Del 2
 -------------------------
 Applikationen saker helt och hållet all typ av applikationsloggning. Din uppgift är att implementera applikationsloggning med ramverket Log4Net. I utveckling ska loggarna skrivas till disk och i produktion (se del 3) ska loggarna skrivas till logentries. https://appharbor.com/addons/logentries 
 Kraven för loggningen är följande:
+
 1. I loggen ska det debug-loggas vilken action som har exekverat. 
 2.	En generell error-logging där alla ohanterade fel error-loggas.
 
