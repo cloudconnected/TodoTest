@@ -5,11 +5,11 @@ Arbetsprovet går ut på förstår todo-applikationens implementation och implem
 
 Del 1
 -------------------------
-Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med [Twitter Bootstrap 2.3.2][http://getbootstrap.com/2.3.2/], [AngularJS][http://angularjs.org/] och [Angular-ui][http://angular-ui.github.io/].
+Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittdelar ska implementeras med [Twitter Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/), [AngularJS](http://angularjs.org/) och [Angular-ui](http://angular-ui.github.io/).
 
 1.	Hämta hem källkoden från detta respository och kör applikationen. Alla tredjepartsramverk hämtas via Nuget. 
 2.	Implementera stöd för att söka efter tillagda todos. 
-   -	Sökningen ska göras mot [ConcurrentBag<IPersistable> Database i Store][https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/Store.cs#L10]. Interfacet [IStore][https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/IStore.cs] får inte förändras.
+   -	Sökningen ska göras mot [ConcurrentBag<IPersistable> Database i Store](https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/Store.cs#L10]. Interfacet [IStore][https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/IStore.cs) får inte förändras.
    -	En sökning på "Mil" ska ge träff på "buy milk", "drink MILK" and "buy a milkshake at mc donalds". Dvs ord ska i todo-ns namn ska vara sökbara och inte kräva att användaren skriver in hela sökordet.
    -	Följande enhetstest ska gå genom:
 
@@ -44,7 +44,7 @@ public void CanSearch()
 
 Del 2
 -------------------------
-Applikationen saknar helt och hållet all typ av applikationsloggning. Implementera applikationsloggning med ramverket [Log4Net][http://logging.apache.org/log4net/]. I utveckling ska loggarna skrivas till disk och i produktion (se del 3) ska loggarna skrivas till [Logentries][https://appharbor.com/addons/logentries].  
+Applikationen saknar helt och hållet all typ av applikationsloggning. Implementera applikationsloggning med ramverket [Log4Net](http://logging.apache.org/log4net/). I utveckling ska loggarna skrivas till disk och i produktion (se del 3) ska loggarna skrivas till [Logentries](https://appharbor.com/addons/logentries]).  
 Kraven för loggningen är följande:
 
 1. I loggen ska det debug-loggas information om vilken action som har exekverats och hur lång tid exekveringen tog.
@@ -52,5 +52,5 @@ Kraven för loggningen är följande:
 
 Del 3
 -------------------------
-Skapa ett gratiskonto hos [AppHarbor][https://appharbor.com/] (CANOE) och deploy’a upp applikationen. Skicka ett mail till rekrytering@cloudconnected.se men den publika länken till projektet på AppHarbor samt en zip med källkoden för projektet. 
+Skapa ett gratiskonto hos [AppHarbor](https://appharbor.com/) (CANOE) och deploy’a upp applikationen. Skicka ett mail till rekrytering@cloudconnected.se men den publika länken till projektet på AppHarbor samt en zip med källkoden för projektet. 
  
