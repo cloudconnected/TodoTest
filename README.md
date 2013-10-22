@@ -46,7 +46,7 @@ Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i mi
 
 Del 2
 -------------------------
-Applikationen saknar helt och hållet all typ av applikationsloggning. Implementera applikationsloggning med ramverket [Log4Net](http://logging.apache.org/log4net/). I utveckling ska loggarna skrivas till disk och i produktion (se del 3) ska loggarna skrivas till [Logentries](https://appharbor.com/addons/logentries]).  
+Applikationen saknar helt och hållet all typ av applikationsloggning. Implementera applikationsloggning med ramverket [Log4Net](http://logging.apache.org/log4net/). I utveckling ska loggarna skrivas till disk och i produktion (se del 3 nedan) ska loggarna skrivas till [Logentries](https://appharbor.com/addons/logentries]).  
 Kraven för loggningen är följande:
 
 1. I loggen ska det debug-loggas information om vilken action som har exekverats och hur lång tid exekveringen tog.
