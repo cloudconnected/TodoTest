@@ -12,7 +12,7 @@ Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i mi
 1.	Hämta hem källkoden från detta respository och kör applikationen. 
 2.	Implementera stöd för att söka efter tillagda todos. 
    -	Sökningen ska göras mot [ConcurrentBag<IPersistable> Database i Store](https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/Store.cs#L10]. Interfacet [IStore][https://github.com/antonkallenberg/TodoTest/blob/master/TodoTest.Web/Data/IStore.cs). Interfacet [IStore](https://github.com/cloudconnected/TodoTest/blob/master/TodoTest.Web/Data/IStore.cs) __får inte__ förändras.
-   -	En sökning på "Mil" ska ge träff på "buy milk", "drink MILK" and "buy a milkshake at mc donalds". Dvs ord ska i todo-ns namn ska vara sökbara och inte kräva att användaren skriver in hela sökordet.
+   -	En sökning på "Mil" ska ge träff på "buy milk", "drink MILK" och "buy a milkshake at mc donalds". Dvs alla ord ska i todo-ns namn ska vara sökbara och inte kräva att användaren skriver in hela sökordet.
    -	Följande enhetstest ska gå genom:
    
    ```csharp
