@@ -208,7 +208,6 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\app\app.js" />
-    <Content Include="Scripts\app\controllers\PaginationCtrler.js" />
     <Content Include="Scripts\app\controllers\TodoController.js" />
     <Content Include="Scripts\app\helpers\HttpRequestUrlHelper.js" />
     <Content Include="Scripts\app\services\TodoService.js" />
