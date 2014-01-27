@@ -7,7 +7,7 @@ namespace TodoTest.Web.Data
 {
     public class Store : IStore
     {
-        private static readonly ConcurrentBag<IPersistable> Database = new ConcurrentBag<IPersistable>();
+        protected static readonly ConcurrentBag<IPersistable> Database = new ConcurrentBag<IPersistable>();
 
         public static void DropDatabase()
         {
