@@ -17,6 +17,7 @@
 
 
 using StructureMap;
+using StructureMap.Graph;
 namespace TodoTest.Web.DependencyResolution {
     public static class IoC {
         public static IContainer Initialize() {

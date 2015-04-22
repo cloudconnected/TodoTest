@@ -1,13 +1,13 @@
 Cloud Connecteds arbetsprov. 
 ================================
 Todo test är grunden för Cloud Connecteds arbetsprov. 
-Arbetsprovet går ut på att förstå todo-applikationens implementation, fixa eventuella buggar och implementera ny funktionalitet till applikationen genom att använda applikationens befintliga ramverk och följa den befintliga arkitekturen/implementationen. Ingen befintlig funktionalitet får tas bort och inga befintliga tester får tas bort eller fallera.
+Arbetsprovet går ut på att förstå todo-applikationens implementation. Fixa eventuella buggar och implementera ny funktionalitet till applikationen genom att använda applikationens befintliga ramverk och följa den befintliga arkitekturen/implementationen. Ingen befintlig funktionalitet får tas bort och inga befintliga tester får tas bort eller fallera.
 
 En demo av denna applikation finns på [todotest.apphb.com](http://todotest.apphb.com/).
 
 Del 1
 -------------------------
-Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittsdelar ska implementeras med [Twitter Bootstrap 3.0.3](http://getbootstrap.com), [AngularJS 1.2.2](http://angularjs.org/) och [Angular-ui bootstrap 0.10.0](http://angular-ui.github.io/bootstrap/). __Alla tredjepartsramverk hämtas via Nuget__. 
+Webbapplikationen har idag stöd för att skapa, radera och uppdatera todos i minnet d.v.s. alla skapade todos sparas till dess att applikationen startas om. Din uppgift är att utöka applikationens funktionalitet med befintliga ramverk. Alla gränssittsdelar ska implementeras med [Twitter Bootstrap 3.3.4](http://getbootstrap.com), [AngularJS 1.3.15](http://angularjs.org/) och [Angular-ui bootstrap 0.12.1](http://angular-ui.github.io/bootstrap/). 
 
 1.	Hämta hem källkoden från detta respository och kör applikationen. 
 2.	Implementera stöd för att söka efter tillagda todos. 

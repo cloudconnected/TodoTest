@@ -5,13 +5,6 @@
     $scope.todos = [];
     $scope.newTodoName = "";
 
-    $scope.init = function () {
-        var promise = TodoService.get($scope.currentPage, $scope.pageSize);
-        promise.then(function (response) {
-            $scope.todos = response;
-        });
-    };
-
     $scope.addTodo = function () {
         if (!$scope.newTodoName) return;
 
@@ -39,6 +32,15 @@
     $scope.hasAnyTodos = function () {
         return _.size($scope.todos) > 0;
     };
+
+    var init = function () {
+        var promise = TodoService.get($scope.currentPage, $scope.pageSize);
+        promise.then(function (response) {
+            $scope.todos = response;
+        });
+    };
+
+    init();
 
     function TodoViewModel(id, name, isComplete) {
         this.Id = id;

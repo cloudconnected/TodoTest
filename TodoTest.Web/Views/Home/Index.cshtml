@@ -4,13 +4,14 @@
     ViewBag.Title = "Awesome Todos!";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div id="PageWrapper">
-    <div id="TodoWrapper" ng-controller="TodoController" ng-init="init()">
+    <div id="TodoWrapper" ng-controller="TodoController">
         <div class="text-center">
             <h2>Awesome todos!</h2>
             <form role="form" class="form-inline">
                 <input type="text" class="form-control" id="Todo" placeholder="Enter new todo name" ng-model="newTodoName">
-                <button class="btn btn-success" ng-click="addTodo()"><i class="icon icon-plus"></i></button>
+                <button class="btn btn-success" ng-click="addTodo()"><i class="fa fa-plus"></i></button>
             </form>
         </div>
         <div id="Todos" ng-show="hasAnyTodos()" ng-cloak>
@@ -18,12 +19,14 @@
             <table class="table table-condensed table-striped">
                 <tr ng-repeat="todo in todos | orderBy:'Name'">
                     <td class="todo">
-                        <label for="Completed-{{todo.Id}}" class="name checkbox" ng-class="{completed: todo.Completed}">{{todo.Name}}
-                            <input type="checkbox" id="Completed-{{todo.Id}}" ng-model="todo.Completed" ng-click="completeTodo(todo)"/>
-                        </label>
+                        <div class="checkbox">
+                            <label for="Completed-{{todo.Id}}" class="name" ng-class="{completed: todo.Completed}">
+                                <input type="checkbox" id="Completed-{{todo.Id}}" ng-model="todo.Completed" ng-click="completeTodo(todo)" /> {{todo.Name}}
+                            </label>
+                        </div>
                     </td>
                     <td>
-                        <a ng-click="removeTodo(todo.Id)" class="btn btn-danger pull-right"><i class="icon-remove"></i></a>
+                        <a ng-click="removeTodo(todo.Id)" class="btn btn-danger pull-right"><i class="fa fa-remove"></i></a>
                     </td>
                 </tr>
             </table>
